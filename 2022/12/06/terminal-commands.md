@@ -12,3 +12,4 @@
 10.**rmdir** ---> _to remove directory_
 11. **rm** ---> _to remove file_
 12. **rm --rf** _to remove folder (or file) recursively and forcefully_
+13. **sudo** _superuser do_ In Unix based OS we use this command to run command as superuser (aka admin)
