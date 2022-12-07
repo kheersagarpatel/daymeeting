@@ -1,0 +1,190 @@
+Daily meeting 
+----------------
+
+Variable and Data types
+------------------------
+
+- What are variables??
+- Variable are container to store the specific type of 
+  data.
+int i = 10;
+
+1. Declaration (annoucement)
+2. Initialization
+3. Declaration + Initialization together
+
+
+The syntax for variable declaration
+-------------------------------------
+- Single variable
+- [modifier data_type variable_name];
+- ex -> static int i;
+
+- Multiple variable of same type
+- [modifier data_type variable_name1, variable_name2,
+variable_name3...];
+- ex -> static int i,j,k...;
+
+
+
+The syntax for variable Initialization
+-------------------------------------
+ 
+- [variable_name = value];
+- ex -> i=10;
+
+
+void main() {
+  
+  Test.i=10;
+  Test.j=20;
+  Test.k=30;
+  print(Test.i.toString());
+  print(Test.j.toString());
+  print(Test.k.toString());
+}
+
+
+
+class Test
+{
+ static int? i,j,k;
+}
+
+
+
+The syntax for variable declaration & Initialization together
+-------------------------------------
+ 
+- [modifier data_type variable_name = value];
+- ex -> static int i=10;
+program
+-----
+
+void main() {
+ 
+  print(Test.i.toString());
+  print(Test.j.toString());
+  print(Test.k.toString());
+}
+
+
+
+class Test
+{
+ static int? i=10,j=20,k=30;
+}
+
+
+
+Classification of variables
+----------------------------
+
+
+- Variable can be classified on the basis of 
+
+1. The type of value they hold
+  a. Primitive variables --> The Primitive variables are the 
+     variables that hold the primitive value.
+     int i=10,20...
+     String str="Hello"
+     double d=2.5
+     bool b=true,false
+
+  b. a. Non Primitive variables --> The Non Primitive variables are the 
+     variables that hold the non primitive value.
+     example
+
+program
+--------
+
+void main() {
+ int i=10; //primitive (recognised by computer language)
+  print(i.toString());
+  
+  Test t; //non primitive (not recognised by computer language)
+}
+
+
+class Test
+{
+ static int? i=10,j=20,k=30;
+}
+    
+2. The place of declaration
+----------------------------
+
+1. instance - 
+ a.If the value of an oblject differs from
+  object to object,such type of variables are called 
+  instance variabless.
+ b. It is directly defined inside a class but outside
+  of any method, block or constructor.
+
+ ex 
+ void main() {
+ 
+  Test t1=Test();
+  t1.i=10;
+  Test t2=Test();
+  t2.i=20;
+  Test t3=Test();
+  t3.i=30;
+  
+  print(t1.i.toString()); // 10
+  print(t2.i.toString()); // 20
+  print(t3.i.toString()); // 30
+
+}
+class Test
+{
+ int? i;
+}
+ ----------------------
+2. static - 
+a.If the value of an oblject is same for all
+  objects ,such type of variables are called 
+  static variabless.
+ b. It is directly defined inside a class with static 
+ keyword but outside
+  of any method, block or constructor.
+
+ JAVA code
+-----------
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Test t1=new Test();
+  t1.i=10;
+  Test t2=new Test();
+  t2.i=20;
+  Test t3=new Test();
+  t3.i=30;
+  
+  System.out.println(t1.i);
+  System.out.println(t2.i);
+  System.out.println(t3.i);
+    }
+}
+class Test
+{
+ static int i;
+}
+
+3. local - 
+ a. Sometimes the programmers need a temporary variable 
+   requirement..To meet such type of requirements they use
+   local variables.
+ b. It is directly defined inside any method, 
+  block or constructor.
+c. It can only be accessed within the method, 
+  block or constructor it is declered in.
+class Test
+{  
+ void m1()
+ {
+   int i=10;
+ }
+}
+
+
