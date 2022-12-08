@@ -1,0 +1,159 @@
+Data types
+-----------
+
+1.If we want to store a value to a variables, then in advance 
+we Are required to specify the type of the value a variable can hold.
+That type is nothing but the Data type.
+
+2. Java is a strictly typed language.
+
+
+int i=10;
+i=20;
+i=2.4;
+
+Note: A class is a user defined data type (non primitive data type)
+
+Primitive data types
+---------------------
+
+Primitive data types are pre defined data types that are already known by the
+compilers.
+ex - byte,short,int,long,boolean,char,float,double
+
+Non Primitive data types
+---------------------
+
+Non Primitive data types are user defined data types that are not
+ known by the compilers but are manually defined by the programmers.
+ex - String, Array, List, Connection etc
+-----------------------------------------
+
+Wrapper class
+---------------
+1. Java is not a pure object oriented programming language.
+ex - int i=10;
+
+here variable i is of type int , which is a primitive data type 
+but not object.
+
+2. If we are required to go for prure object oriented programming 
+practices then we can use wrapper classes to achieve it.
+ex - Integer i=new Integer(10);
+
+3. All the Wrapper classees are present inside java.lang package
+class HelloWorld {
+    // byte b=10;
+    //short s=20;
+    // int i=30;
+    //  long l=10;
+    // float f=10.5;
+    // double d = 10.5;
+    // char ch='A';
+    // boolean b=true;
+
+    
+     Byte b=new Byte((byte)10);
+     Short s=new Short((short)20);
+     Integer i =new Integer(30);
+     Long l=new Long(40);
+     Float f=new Float(10.5f);
+     Double d=new Double(10.6);
+     Character ch=new Character('A');
+     Boolean b1=new Boolean(true);
+     
+    
+    
+    
+    
+    public static void main(String[] args) {
+        HelloWorld hw= new HelloWorld();
+        System.out.println(hw.b+" "+hw.s+" "+hw.i+" "+hw.l+" "+hw.f+" "+hw.d+" "+hw.ch+" "+hw.b1);
+        
+        System.out.println(hw.b);
+        System.out.println(hw.s);
+        System.out.println(hw.i);
+        System.out.println(hw.l);
+        System.out.println(hw.f);
+        System.out.println(hw.d);
+        System.out.println(hw.ch);
+        System.out.println(hw.b1);
+    }
+}
+
+
+
+
+byte
+----
+size = 1 byte (8 bits)
+default value = 0
+Wrapper class = Byte
+Range = -128 to 127 (-2^8 to 2^8-1)
+
+short 
+-----
+
+size = 2 bytes (16 bits)
+default value = 0
+Wrapper class = Short
+Range = -32,768 to 32,767 (2^16 to 2^16-1)
+
+int 
+----
+size = 4 bytes (32 bits)
+default value = 0
+Wrapper class = Integer
+Range = -2,14,74,83,648 to 2,14,74,83,647 (-2^32 to 2^32-1)
+
+long
+----
+size = 8 bytes (64 bits)
+default value = 0
+Wrapper class = Long
+Range = -2^64 to 2^64-1
+
+float
+------
+
+size = 4 bytes (32 bits)
+default value = 0.0f
+Wrapper class = Float
+Range = -3.4E38 to  +3.4E38
+
+double 
+------
+
+size = 8 bytes (64 bits)
+default value = 0.0
+Wrapper class = Double
+Range = -1.7E308 to +1.7E308
+
+boolean
+-------
+
+size = 1 byte (8 bits)
+default value = false
+Wrapper class = Boolean
+Range = Not applicale (but allowed values are true and false)
+
+char
+----
+
+size = 2 bytes (16 bits)
+default value = (space)
+Wrapper class = Character
+Range = 0 to 65,535
+
+
+
+
+
+
+
+
+
+
+
+
+
