@@ -1,0 +1,2 @@
+By Ayush sir:
+The m1 method of child class has overridden the m1 method of parent class
