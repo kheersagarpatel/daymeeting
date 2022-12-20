@@ -23,7 +23,6 @@ q = apple +fruit
 -------
 ## To ignore words (none of these words)
 q = apple -phone
-q = apple -phone
 
 -------
 ## Search for a specific word on social media networks,
