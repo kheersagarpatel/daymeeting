@@ -25,7 +25,7 @@ q = apple +fruit
 q = apple -phone
 
 -------
-## Search for a specific word on social media networks,
+## Search for a specific word on social media networks
 q = @wikipedia
 
 -------
